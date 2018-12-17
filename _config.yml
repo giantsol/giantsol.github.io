@@ -1,6 +1,6 @@
 # Site settings
-title:          Tale
-description:    "Minimal Jekyll theme for storytellers"
+title:          Hansol's Blog
+description:    "Hansol's blog"
 url:            "https://giantsol.github.io"
 
 # Google Analytics
@@ -8,9 +8,9 @@ google_analytics: UA—XXXXXXXX-X
 
 # Author
 author:
-  name:         Chester How
-  url:          https://chester.how
-  email:        chesterhow@gmail.com
+  name:         Hansol Lee
+  url:          https://giantsol.github.io
+  email:        giantsol64@gmail.com
 
 # Build settings
 markdown:       kramdown
@@ -25,10 +25,13 @@ sass:
 # Gems
 plugins:
   - jekyll-feed
-  - jekyll-paginate
+  - jekyll-paginate-v2
   - jekyll-seo-tag
   - jemoji #Uncomment this to allow emoji in your post
 
 # Permalinks
 permalink:      /:year-:month-:day/:title
-paginate:       5
+pagination:
+  enabled: true
+  per_page: 4
+  title: 'Home'
