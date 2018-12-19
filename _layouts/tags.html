@@ -16,7 +16,7 @@ layout: archive
     {% for tag in site.tags %}
       {% if tag[1].size == i %}
         <li>
-          <a href="#{{ tag[0] | slugify }}">
+          <a class="do-default-click" href="#{{ tag[0] | slugify }}">
             <strong>{{ tag[0] }}</strong> <span class="taxonomy__count">{{ i }}</span>
           </a>
         </li>
@@ -35,7 +35,7 @@ layout: archive
             {% include archive-single.html type=page.entries_layout %}
           {% endfor %}
         </div>
-        <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+        <!-- <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a> -->
       </section>
     {% endif %}
   {% endfor %}
