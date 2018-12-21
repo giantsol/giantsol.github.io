@@ -105,7 +105,7 @@ analytics:
 author:
   name             : *name
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
+  bio              : "Interested in creating things of my own."
   location         : "Seoul, Korea"
   email            : "giantsol64@gmail.com"
   links:
