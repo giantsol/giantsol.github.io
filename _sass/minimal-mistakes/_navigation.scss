@@ -120,7 +120,7 @@
   /* next/previous buttons */
   &--pager {
     display: block;
-    padding: 1em 2em;
+    padding: 0.3em 2em;
     float: left;
     width: 50%;
     font-family: $sans-serif;
@@ -131,6 +131,9 @@
     color: $muted-text-color;
     border: 1px solid mix(#000, $border-color, 25%);
     border-radius: $border-radius;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 
     &:hover {
       @include yiq-contrasted($muted-text-color);
@@ -157,9 +160,14 @@
 
 .page__content + .pagination,
 .page__meta + .pagination,
-.page__share + .pagination,
 .page__comments + .pagination {
   margin-top: 2em;
+  padding-top: 2em;
+  border-top: 1px solid $border-color;
+}
+
+.page__share + .pagination {
+  margin-top: 1em;
   padding-top: 2em;
   border-top: 1px solid $border-color;
 }
