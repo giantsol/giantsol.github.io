@@ -6,6 +6,8 @@ main:
     url: /posts/
   - title: "Tags"
     url: /tags/
+  - title: "Bookshelf"
+    url: /bookshelf/
   # - title: "Sitemap"
   #  url: /sitemap/
   # - title: "About"

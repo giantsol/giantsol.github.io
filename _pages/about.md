@@ -2,6 +2,7 @@
 permalink: /about/
 title: "About"
 excerpt: "Introducing Hansol Lee"
+author_profile: false
 ---
 
 ![Me]({{ site.url }}{{ site.baseurl }}/assets/images/me.jpg){: .align-center}
