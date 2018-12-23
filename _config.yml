@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "Hansol's Blog"
 title_separator          : "|"
 name                     : &name "Hansol Lee"
-description              : &description "An amazing website."
+description              : &description "All about my creative self"
 url                      : "https://giantsol.github.io"
 baseurl                  : 
 repository               : "giantsol/giantsol.github.io"
