@@ -1,6 +1,6 @@
 ---
 title: "살해하는 운명 카드"
-image_path: assets/images/murder_destiny_card.jpeg
+image_path: assets/images/books/murder_destiny_card.jpeg
 excerpt: "최근 읽은 스릴러, 미스터리 소설 중 몰입감있게 읽었던 책이다. 쓸데없이 잔인하거나 놀래키는 ..."
 ---
 
