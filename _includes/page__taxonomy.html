@@ -1,7 +1,8 @@
 {% if site.tag_archive.type and page.tags[0] %}
-  {% include tag-list.html %}
-{% endif %}
-
-{% if site.category_archive.type and page.categories[0] %}
-  {% include category-list.html %}
+  <footer class="page__meta">
+    {% if site.data.ui-text[site.locale].meta_label %}
+      <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
+    {% endif %}
+    {% include tag-list.html %}
+  </footer>
 {% endif %}
