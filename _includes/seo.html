@@ -52,7 +52,15 @@
   {%- assign og_type = "website" -%}
 {%- endif -%}
 
-<title>{{ seo_title | default: site.title }}{% if paginator %}{% unless paginator.page == 1 %} {{ title_separator }} {{ site.data.ui-text[site.locale].page | default: "Page" }} {{ paginator.page }}{% endunless %}{% endif %}</title>
+{%- assign title = seo_title | default: site.title -%}
+{%- if paginator -%}
+  {%- unless paginator.page == 1 -%}
+    {%- assign title = title | append: title_separator | append: "Page" | append: paginator.page -%}
+  {%- endunless -%}
+{%- endif -%}
+
+<title>{{ title }}</title>
+<meta name="title" content="{{ title }}">
 <meta name="description" content="{{ seo_description }}">
 
 {% if author.name %}
@@ -62,7 +70,7 @@
 <meta property="og:type" content="{{ og_type }}">
 <meta property="og:locale" content="{{ site.locale | replace: "-", "_" | default: "en_US" }}">
 <meta property="og:site_name" content="{{ site.title }}">
-<meta property="og:title" content="{{ page.title | default: site.title | markdownify | strip_html | strip_newlines | escape_once }}">
+<meta property="og:title" content="{{ title }}">
 <meta property="og:url" content="{{ canonical_url }}">
 
 {% if page.excerpt %}
@@ -94,6 +102,20 @@
   {% if author_twitter %}
     <meta name="twitter:creator" content="@{{ author_twitter }}">
   {% endif %}
+{% else %}
+  <meta name="twitter:title" content="{{ title }}">
+  <meta name="twitter:description" content="{{ seo_description }}">
+  <meta name="twitter:url" content="{{ canonical_url }}">
+
+  {% if page_large_image %}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="{{ page_large_image }}">
+  {% else %}
+    <meta name="twitter:card" content="summary">
+    {% if page_teaser_image %}
+      <meta name="twitter:image" content="{{ page_teaser_image }}">
+    {% endif %}
+  {% endif %}
 {% endif %}
 
 {% if page.date %}
@@ -105,13 +127,19 @@
 {% endif %}
 
 {% if site.facebook %}
+  {% if site.facebook.username %}
+    <meta property="article:author" content="{{ site.facebook.username }}">
+  {% endif %}
   {% if site.facebook.publisher %}
     <meta property="article:publisher" content="{{ site.facebook.publisher }}">
   {% endif %}
-
   {% if site.facebook.app_id %}
     <meta property="fb:app_id" content="{{ site.facebook.app_id }}">
   {% endif %}
+{% endif %}
+
+{% if site.google_publisher %}
+  <link rel="publisher" href="{{ site.google_publisher }}">
 {% endif %}
 
 <link rel="canonical" href="{{ canonical_url }}">

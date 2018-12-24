@@ -82,10 +82,11 @@ naver_site_verification  : "2479f827d6cb4e04219db0608436da8d9f8700ab"
 twitter:
   username               :
 facebook:
-  username               :
-  app_id                 :
-  publisher              :
+  username               : "Han Sol Lee"
+  app_id                 : 286506825388577
+  publisher              : "https://www.facebook.com/hansol.lee.1612"
 og_image                 : "/assets/images/android-chrome-192x192.png" # Open Graph/Twitter default site image
+google_publisher         : "https://plus.google.com/107120043675919190649"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -93,6 +94,8 @@ social:
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
     - "https://www.linkedin.com/in/hansol-lee-442a1213b/"
+    - "https://plus.google.com/107120043675919190649"
+    - "https://www.facebook.com/hansol.lee.1612"
 
 # Analytics
 analytics:
@@ -116,6 +119,9 @@ author:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/hansol-lee-442a1213b/"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      url: "https://www.facebook.com/hansol.lee.1612"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       # url: mailto:your@mail.com
@@ -125,9 +131,6 @@ author:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -146,7 +149,7 @@ footer:
       # url:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url:
+      url: "https://www.facebook.com/hansol.lee.1612"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
