@@ -318,3 +318,5 @@ defaults:
       read_time: true
       comments: true
       share: true
+
+github: [metadata]
