@@ -11,3 +11,16 @@ layout: archive
 {% endfor %}
 
 {% include paginator.html %}
+
+{% for collection in site.collections %}
+  {% if collection.output == true and collection.label == "books" %}
+    <div class="archive__collection">
+    <h4 class="subtitle">Recent books in bookshelf</h4>
+      {% for post in collection.docs limit:2 %}
+        {% include archive-single.html %}
+      {% endfor %}
+    <a href="{{ "/bookshelf/" | relative_url }}" class="back-to-top">Go to bookshelf &rarr;</a>
+    </div>
+  {% endif %}
+{% endfor %}
+    
