@@ -7,7 +7,8 @@ layout: archive
 {% for collection in site.collections %}
   {% if collection.output == true and collection.label == "books" %}
     <div class="feature__wrapper">
-      {% for f in collection.docs %}
+      {% assign sortedDocs = collection.docs | sort: 'date' %}
+      {% for f in sortedDocs reversed %}
 
         {% if f.url contains "://" %}
           {% capture f_url %}{{ f.url }}{% endcapture %}
