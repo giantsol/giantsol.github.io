@@ -2,6 +2,7 @@
 title: "살해하는 운명 카드"
 image_path: assets/images/books/murder_destiny_card.jpeg
 excerpt: "최근 읽은 스릴러, 미스터리 소설 중 몰입감있게 읽었던 책이다. 쓸데없이 잔인하거나 놀래키는 ..."
+permalink: /books/murder-destiny-card/
 ---
 
 최근 읽은 스릴러, 미스터리 소설 중 몰입감있게 읽었던 책이다. 쓸데없이 잔인하거나 놀래키는 부분들은 없고, 단순히 분위기만으로 긴장되게끔 만드는 유형이라 개인적으로는 더 마음에 들었다.
