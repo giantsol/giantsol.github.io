@@ -1,5 +1,5 @@
 ---
-title: "Emulator vs. Simulator"
+title: "Emulator vs Simulator"
 tags:
   - cs fundamental
 ---
