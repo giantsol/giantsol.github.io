@@ -16,8 +16,8 @@ layout: archive
   {% if collection.output == true and collection.label == "books" %}
     <div class="archive__collection">
     <h4 class="subtitle">Recent books in bookshelf</h4>
-      {% assign sortedDocs = collection.docs | sort: 'date' %}
-      {% for post in sortedDocs reversed limit:2 %}
+      {% assign sortedDocs = collection.docs | sort: 'date' | reverse %}
+      {% for post in sortedDocs limit:2 %}
         {% include archive-single.html %}
       {% endfor %}
     <a href="{{ "/bookshelf/" | relative_url }}" class="back-to-top">Go to bookshelf &rarr;</a>
