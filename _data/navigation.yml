@@ -2,9 +2,9 @@
 main:
   - title: "About"
     url: /about/
-  - title: "Posts"
+  - title: "Posts by Year"
     url: /posts/
-  - title: "Tags"
+  - title: "Posts by Tag"
     url: /tags/
   - title: "Bookshelf"
     url: /bookshelf/
