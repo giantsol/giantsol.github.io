@@ -10,9 +10,9 @@ tags:
 
 **32bit 프로세서에서는 64bit 용으로 제작된 프로그램을 실행시킬 수 없다**. 왜냐하면 64bit 프로그램에서 내리는 명령어들은 64bit씩 처리해야 의미를 가지는데, 이를 32bit씩 끊어서 처리할 수는 없기 때문이다. **반면 64bit 프로세서에서 32bit 프로그램은 실행시킬 수 있다**. 맥은 잘 모르겠으나, 윈도우에서는 [WOW64](https://docs.microsoft.com/en-us/windows/desktop/winprog64/running-32-bit-applications)라는 내장 emulator 덕분이라고 한다. 64bit의 맥과 윈도우 둘 다 아직까지는 32bit 프로그램에 대한 호환성을 유지해주지만, 요즘의 컴퓨터 대부분이 64bit 프로세서를 사용하는 만큼 기존 32bit 프로그램들도 업데이트 하길 권장하고 있다([참고](https://support.apple.com/en-us/HT208436)).
 
-윈도우에서 Program Files와 Program Files (x86) 폴더가 따로있는 이유가 64bit 프로세서에서 32bit, 64bit 프로그램을 동시에 지원하기 위해서이다. *.dll*과 같은 확장자를 지닌 shared library는 32bit, 64bit용 따로 제작되는데, 프로그램 구동 시 어느 버전을 사용할건지를 폴더로 구분한 것이다. 만약 32bit 프로그램을 Program Files 폴더에 둔다? 흠.. 해보진 않았지만.. 이론적으로는 잘 안될듯!
+윈도우에서 Program Files와 Program Files (x86) 폴더가 따로있는 이유가 64bit 프로세서에서 32bit, 64bit 프로그램을 동시에 지원하기 위해서이다. Program Files 폴더에는 64bit, Program Files (x86)에는 32bit 프로그램이 들어간다. *.dll*과 같은 확장자를 지닌 shared library는 32bit, 64bit용 따로 제작되는데, 프로그램 구동 시 어느 버전을 사용할건지를 폴더로 구분한 것이다. 만약 32bit 프로그램을 Program Files 폴더에 둔다? 흠.. 해보진 않았지만.. 이론적으로는 안돌아갈 것이다!
 
-*PS)* 왜 32bit를 x86이라고 부르고 64bit를 x64라고 부를까(왜 32bit가 숫자가 더 높은거야!?) 이는 단순히 옛날부터 이어져온 네이밍 컨벤션이다([참고](https://stackoverflow.com/questions/29974425/why-is-windows-32-bit-called-windows-x86-and-not-windows-x32)). 64bit도 원래는 x86-64 라고 불렀지만 x64라고 줄여서 부르게 되었다고 한다.
+*PS)* 32bit 프로세서를 x86이라고도 부르고, 64bit 프로세서는 x64라고도 부르는데 이건 대체 뭘까? 왜 32bit를 더 높은 숫자인 x86이라고도 부르는거지? 이는 단순히 옛날부터 이어져온 네이밍 컨벤션이다([참고](https://stackoverflow.com/questions/29974425/why-is-windows-32-bit-called-windows-x86-and-not-windows-x32)). 64bit도 원래는 x86-64 라고 불렸지만 x64라고 줄여서 부르게 되었다고 한다.
 
 참고:
 - [https://www.howtogeek.com/56701/htg-explains-whats-the-difference-between-32-bit-and-64-bit-windows-7/](https://www.howtogeek.com/56701/htg-explains-whats-the-difference-between-32-bit-and-64-bit-windows-7/)
