@@ -15,6 +15,6 @@ emulator는 **실제 기기의 모든 부분을 그대로 구현한 가상 머�
 뭐, 평소에 이 둘을 구분할 일은 없지만, 이거 하나만 기억하면 될듯 하다:
 > If a flight-simulator could really transport you from A to B, then it would be a flight-emulator.
 
-출처:
-- https://stackoverflow.com/questions/1584617/simulator-or-emulator-what-is-the-difference
-- https://stackoverflow.com/questions/4544588/difference-between-iphone-simulator-and-android-emulator
+참고:
+- [https://stackoverflow.com/questions/1584617/simulator-or-emulator-what-is-the-difference](https://stackoverflow.com/questions/1584617/simulator-or-emulator-what-is-the-difference)
+- [https://stackoverflow.com/questions/4544588/difference-between-iphone-simulator-and-android-emulator](https://stackoverflow.com/questions/4544588/difference-between-iphone-simulator-and-android-emulator)
