@@ -1,7 +1,6 @@
 ---
 title: "미등록자"
 image_path: assets/images/books/unregistered.jpg
-excerpt: "2018년 10월에 나온 \"미등록자\"는 모든 시민의 DNA 정보를 정부가 관리하기 시작한 것을 배경으로 한다. 표면적 의도는 ..."
 permalink: /books/unregistered/
 ---
 

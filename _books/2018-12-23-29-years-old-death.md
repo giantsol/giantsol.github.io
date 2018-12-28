@@ -1,7 +1,6 @@
 ---
 title: "스물아홉 생일, 1년 후 죽기로 결심했다"
 image_path: assets/images/books/29_years_old_death.jpg
-excerpt: "읽을 때 마다 *'사람은 이렇게나 변할 수 있다'*를 느끼게 해주는 감명깊은 책이다. 괄목상대(刮目相對),  ..."
 permalink: /books/29-years-old-death/
 ---
 
