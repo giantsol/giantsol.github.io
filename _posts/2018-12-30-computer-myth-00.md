@@ -18,6 +18,6 @@ The Computer Myth라는 이 블로그의 시리즈는 위 책을 토대로 **컴
 
 우리가 살펴볼 주제들을 간단히 그려보면 위와 같다. 컴퓨터 시스템을 크게 Hardware Land와 Software Land로 나누고, 제일 복잡스러운 Hardware Land부터 탐험해나갈 것이다. Hardware Land의 최하단부터 시작해서 Software Land의 최상부까지 천천히 접근해나갈 것이다. 
 
-그럼, 게이트 중 최초의 게이트 **NAND 게이트**부터 시작해보자!
+그럼, 첫번째로 게이트 중 최초의 게이트, [**NAND 게이트**부터 시작해보자!](/computer-myth-01/)
 
-(The Computer Myth라는 제목은 [The Charisma Myth](https://www.amazon.com/Charisma-Myth-Science-Personal-Magnetism/dp/1591845947/ref=sr_1_1?s=books&ie=UTF8&qid=1545785581&sr=1-1&keywords=the+charisma+myth)라는 책 제목에서 따왔다. 이 책은 카리스마가 뭔지, 카리스마를 만드는 것이 무엇인지를 역사적, 심리적 방면에서 분석한 매우 흥미로운 책이다. 상당히 추천하는 책 중 하나이다.) 
+*P.S. The Computer Myth라는 제목은 [The Charisma Myth](https://www.amazon.com/Charisma-Myth-Science-Personal-Magnetism/dp/1591845947/ref=sr_1_1?s=books&ie=UTF8&qid=1545785581&sr=1-1&keywords=the+charisma+myth)라는 책 제목에서 따왔다. 이 책은 카리스마가 뭔지, 카리스마를 만드는 것이 무엇인지를 역사적, 심리적 방면에서 분석한 매우 흥미로운 책이다. 상당히 추천하는 책 중 하나이다.*

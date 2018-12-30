@@ -203,22 +203,23 @@ li ol {
 
 figure {
   display: -webkit-box;
-  display: flex;
   -webkit-box-pack: justify;
   justify-content: space-between;
   -webkit-box-align: start;
   align-items: flex-start;
   flex-wrap: wrap;
-  margin: 2em 0;
+  margin: 2em auto;
+  display: block;
+  width: 100%;
 
-  img,
   iframe,
   .fluid-width-video-wrapper {
     margin-bottom: 1em;
   }
 
   img {
-    width: 100%;
+    display: block;
+    margin: 0 auto;
     border-radius: $border-radius;
     -webkit-transition: $global-transition;
     transition: $global-transition;
@@ -258,7 +259,9 @@ figure {
 /* Figure captions */
 
 figcaption {
-  margin-bottom: 0.5em;
+  display: block;
+  margin: 0.5em auto 0.5em auto;
+  text-align: center;
   color: $muted-text-color;
   font-family: $caption-font-family;
   font-size: $type-size-6;
