@@ -1,5 +1,5 @@
 ---
-title: "The Computer Myth - NAND gate (Part 01)"
+title: "The Computer Myth - NAND Gate (Part 01)"
 tags:
   - cs fundamental
 ---
