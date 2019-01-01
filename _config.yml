@@ -85,7 +85,7 @@ facebook:
   username               : "Han Sol Lee"
   app_id                 : 286506825388577
   publisher              : "https://www.facebook.com/hansol.lee.1612"
-og_image                 : "/assets/images/android-chrome-192x192.png" # Open Graph/Twitter default site image
+og_image                 : "/assets/images/site-logo.jpg" # Open Graph/Twitter default site image
 google_publisher         : "https://plus.google.com/107120043675919190649"
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
