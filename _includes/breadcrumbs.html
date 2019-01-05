@@ -27,9 +27,16 @@
       {% if forloop.last %}
         <li class="current">{{ page.title }}</li>
       {% else %}
+
+        {% if crumb == 'books' %}
+          {% assign crumb_final = 'bookshelf' %}
+        {% else %}
+          {% assign crumb_final = crumb %}
+        {% endif %}
+
         {% assign i = i | plus: 1 %}
         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a href="{{ crumb | downcase | replace: '%20', '-' | prepend: path_type | prepend: crumb_path | relative_url }}" itemprop="item"><span itemprop="name">{{ crumb | replace: '-', ' ' | replace: '%20', ' ' | capitalize }}</span></a>
+          <a href="{{ crumb_final | downcase | replace: '%20', '-' | prepend: path_type | prepend: crumb_path | relative_url }}" itemprop="item"><span itemprop="name">{{ crumb_final | replace: '-', ' ' | replace: '%20', ' ' | capitalize }}</span></a>
           <meta itemprop="position" content="{{ i }}" />
         </li>
         <span class="sep">{{ site.data.ui-text[site.locale].breadcrumb_separator | default: "/" }}</span>
