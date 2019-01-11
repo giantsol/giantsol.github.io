@@ -65,4 +65,4 @@ in으로 들어온 bit를 반전시키는 boolean logic을 수행하는 게이�
   <figcaption>지금까지의 여정!</figcaption>
 </figure> 
 
-NAND 게이트와 이를 기반으로 한 기본적인 게이트들까지 알아보았다. 이제 ALU 칩에 대해 알아볼 준비가 거의 다 되었다. 마지막으로 **Boolean Arithmetic**이라는 개념만 살펴보자.
+NAND 게이트와 이를 기반으로 한 기본적인 게이트들까지 알아보았다. 이제 ALU 칩에 대해 알아볼 준비가 거의 다 되었다. 마지막으로 [Boolean Arithmetic](/computer-myth-03/)이라는 개념만 살펴보자.
