@@ -23,7 +23,6 @@ tags:
 ```xml
 <!-- 노랑이 -->
 <FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F8E24C">
@@ -56,7 +55,6 @@ tags:
 ```xml
 <!-- 노랑이 -->
 <FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F8E24C"
@@ -72,15 +70,15 @@ tags:
   <figcaption>clipChildren이 false일 때</figcaption>
 </figure> 
 
-검정이가 자신의 영역 밖으로도 이미지를 그렸다! 노랑이의 clipChildren 값이 false이기 때문에, 노랑이가 검정이에게 **"너의 사이즈만큼 clip하지 말고 그냥 내 canvas 그대로 써!"** 라고 했기 때문이다. 결국 검정이가 **'차지하는 영역'**은 변함없이 검정 색깔의 공간 만큼이지만, 검정이가 **'그릴 수 있는 영역'**은 노랑이의 canvas 그대로가 되는 것이다. 
+검정이가 자신의 영역 밖으로도 이미지를 그렸다! 노랑이의 clipChildren 값이 false라서, 노랑이가 검정이에게 **"너의 사이즈만큼 clip하지 말고 그냥 내 canvas 그대로 써!"** 라고 했기 때문이다. 결국, 검정이가 **'차지하는 영역'**은 변함없이 검정 색깔의 공간이지만, 검정이가 **'그릴 수 있는 영역'**은 노랑이의 canvas 그대로가 되는 것이다. 
 
-여기서 배울 수 있는건 **view가 차지하는 영역과 그릴 수 있는 영역이 반드시 같지는 않다는 것이다**. 실제로는 안드로이드 프레임워크에서 이 속성값을 보고 손수 동일하게 잡아주고 있던 것인데, 디폴트 값 덕분에 우리가 당연시 해왔던 것이다. clipChildren을 이용해서 이 동작을 바꿀 수 있다.
+여기서 배울 수 있는건 **view가 '차지하는 영역'과 '그릴 수 있는 영역'이 반드시 같지는 않다는 것이다**. 실제로는 안드로이드 프레임워크에서 이 속성값을 보고 손수 동일하게 잡아주고 있던 것인데, 디폴트 값 덕분에 우리가 당연시 해왔던 것이다. clipChildren을 이용해서 이 동작을 바꿀 수 있다.
 
-주의할 점! 위에서 봤듯이 **노랑이 안에 검정이가 있고, 검정이가 자신의 영역 밖으로 그릴 수 있게 하려면, 검정이의 clipChildren 값이 아닌 노랑이의 값을 바꾸는 것이다**. 헷갈리지 말자!
+주의할 점! **검정이가 자신의 영역 밖으로 그릴 수 있게 하려면, 검정이의 clipChildren 값이 아닌 그의 부모, 즉 노랑이의 값을 바꾸는 것이다**. 헷갈리지 말자!
 
 ---
 
-번외로, 이 속성이 실제로 어떻게 적용되는 것인지 프레임워크 소스를 간단히 살펴보자. 위 예제를 다시 사용해보자. 우선, 노랑이가 자신의 child(검정이)를 그리기 위해 drawChild 함수를 부른다:
+번외로, 이 속성이 실제로 어떻게 적용되는 것인지 프레임워크 소스를 간단히 살펴보자. 위 예제를 다시 사용해보면, 우선 노랑이가 자신의 child(검정이)를 그리기 위해 drawChild 함수를 부른다:
 
 ```java
 // ViewGroup.java
