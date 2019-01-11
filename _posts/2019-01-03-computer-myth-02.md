@@ -61,7 +61,7 @@ in으로 들어온 bit를 반전시키는 boolean logic을 수행하는 게이�
 ---
 
 <figure>
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/computer-myth/02-5.jpg" alt="Computer Myth pathway in part 02">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/computer-myth/02-5.JPG" alt="Computer Myth pathway in part 02">
   <figcaption>지금까지의 여정!</figcaption>
 </figure> 
 
