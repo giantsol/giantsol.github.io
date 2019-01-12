@@ -1,5 +1,5 @@
 ---
-title: "Where to put script tag in HTML?"
+title: "Where to Put Script in HTML?"
 tags:
   - web
 ---

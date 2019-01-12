@@ -1,5 +1,5 @@
 ---
-title: "32bit vs 64bit processors"
+title: "32bit vs 64bit Processors"
 tags:
   - cs fundamental
 ---

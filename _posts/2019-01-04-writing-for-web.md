@@ -1,5 +1,5 @@
 ---
-title: "Writing for web"
+title: "Writing for Web"
 excerpt_separator: "<!--more-->"
 tags:
   - 끄적
