@@ -219,7 +219,7 @@ figure {
 
   img {
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 1em auto;
     border-radius: $border-radius;
     -webkit-transition: $global-transition;
     transition: $global-transition;
@@ -230,6 +230,9 @@ figure {
   }
 
   &.half {
+
+    display: flex;
+
     > a,
     > img {
       @include breakpoint($small) {
