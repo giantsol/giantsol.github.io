@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Hansol's Blog"
+title                    : "Hansol's Blog - A blog for amateur programmers"
 title_separator          : "-"
 name                     : &name "Hansol Lee"
 description              : &description "All about my creative self"
