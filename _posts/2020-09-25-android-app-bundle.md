@@ -22,7 +22,7 @@ Android App Bundle (.aab 확장자)은 플레이스토어에 앱을 기재할 �
     - 그럼 5.0 미만은?
         - 5.0 미만은 split apk를 지원하지 않기 때문에, 위의 multiple apk 방식으로 다운받아진다.
         - 즉, **개발자 입장에선 aab 파일 하나만 올리면 5.0 미만에서는 multiple apk로, 5.0 이상에서는 split apk로 다운**받아진다.
-2. aab로 등록된 앱을 유저가 다운받을 때 **CPU, screen density, language로 구분된 apk들을 따로 다운*받게 된다.
+2. aab로 등록된 앱을 유저가 다운받을 때 **CPU, screen density, language로 구분된 apk들을 따로 다운**받게 된다.
     - e.g. Galaxy S6 Edge (arm64-v8a, xxxhdpi) 대상으로 aab에서 생성되는 apk 파일들:
         - base-master.apk
         - base-arm64_v8a.apk
@@ -33,7 +33,7 @@ Android App Bundle (.aab 확장자)은 플레이스토어에 앱을 기재할 �
     - 한편, ./gradlew bundleDebug를 할 시 aab 파일이 나오는데, 이 **aab에서 기기에 설치하기 위한 apk 파일들을 직접 추출하는건 좀 번거롭다** (bundletool이라는 툴이 쓰인다).
     - 대신, Android Studio 3.2 이상이라면 aab에서 apk를 설치하는 과정을 쉽게 할 수 있다.
         - Run > Edit Configurations에서 Deploy 옵션을 "**APK from app bundle**"로 바꿔준 후 실행한다.
-4. 플레이스토어에 앱을 aab로 등록하기 위해서는 **Play App Signing이 필수*이다.
+4. 플레이스토어에 앱을 aab로 등록하기 위해서는 **Play App Signing이 필수**이다.
     - Play App Signing이란, **앱의 signing key를 구글에서 관리**하도록 기존에 쓰이던 signing key를 플레이스토어에 등록하는 것이다.
         - 필수인 이유는 **App Bundle의 경우 실제 apk를 만드는 과정이 구글쪽에서 진행되기 때문**이다 (apk를 추출하고 서명할 때를 위해).
         - App Bundle이 아닌 일반 apk를 사용할 때에도 Play App Signing을 이용할 수 있다.
@@ -44,7 +44,7 @@ Android App Bundle (.aab 확장자)은 플레이스토어에 앱을 기재할 �
             - signing key와 upload key가 다를 경우: **알맞은 upload key로 서명된건지 인증서로 확인하고, 맞다면 해당 서명을 벗겨낸 후 등록된 signing key로 다시 서명**한다.
     - Play App Signing의 또다른 장점은 **key 분실에 대응할 수 있다는 점**이다.
         - 기존에 signing key를 upload key로도 사용하던 도중 signing key를 분실했을 경우: **새로운 upload key를 요청할 수 있고, 그 뒤 로컬에서 apk/aab를 빌드할 때 발급받은 upload key를 사용**하면 된다.
-            - 유저에게 설치되는 apk의 서명은 (로컬에서는 분실되었지만) 구글에 등록된 signing key로 진행되기 때문에 업데이트에 지장이 없다.
+            - 유저에게 설치되는 apk의 서명은 (로컬에서는 분실되었지만) 구글에 등록된 signing key로 진행되기 때문에 유저 입장에서 업데이트에 지장이 없다.
         - 기존에 새로운 upload key를 사용하던 도중 upload key를 분실했을 경우: **위와 마찬가지로 새로운 upload key를 요청**하면 된다.
         - 단, **Play App Signing에 등록한 signing key 자체를 다시 받을 수는 없다**. 따라서, signing key를 분실한 경우:
             - upload key를 발급받으면 되니 플레이스토어에 앱을 기재하는 것에는 문제가 없으나,
