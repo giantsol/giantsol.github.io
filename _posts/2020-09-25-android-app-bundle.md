@@ -4,7 +4,6 @@ tags:
   - android
 ---
 
-
 Android App Bundle (.aab 확장자)은 플레이스토어에 앱을 기재할 수 있는 새로운 방법이다. 앱을 기재할때는 크게 3가지의 방법이 있는데:
 
 1. **Universal apk**: 그냥 하나의 apk 파일을 등록한다.
